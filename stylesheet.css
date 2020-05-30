@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -111,7 +115,76 @@ body {
 
 
 /* Navigation Bar */
-.navBar {
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    transition: all 0.5s ease 0s;
+    padding: 15px 60px;
+}
+
+header.navFadeIn {
+    padding: 5px 60px;
+    background-color: var(--navBar-color);
+    box-shadow: 0 0 20px var(--navBar-color);
+}
+
+header.navFadeOut {
+    top: -100px;
+}
+
+header .logo {
+    position: relative;
+    transition: all 0.5s ease 0s;
+}
+
+header .logo img {
+    width: 75px;
+    transition: all 0.3s ease 0s;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    padding: 0 20px;
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--bodyText-color);
+    font-size: 18px;
+    font-weight: 300;
+    transition: all 0.3s ease 0s;
+}
+
+
+header .logo img:hover {
+    transform: rotate(-10deg) scale(1.1);
+    filter: drop-shadow(0 0 2px var(--title-color));
+}
+
+header ul li a:hover {
+    transform: rotate(5deg) scale(1.1);
+    color: var(--title-color);
+    text-shadow: 0 0 15px var(--title-color);
+}
+
+/* .navBar {
     position: sticky;
     display: flex;
     height: 100px;
@@ -152,12 +225,12 @@ body {
     transform: rotate(5deg) scale(1.1);
     color: var(--title-color);
     text-shadow: 0 0 15px var(--title-color);
-}
+} */
 
 /* body content */
 .landing {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
 }
 
 /* particle-js */
@@ -189,7 +262,8 @@ body {
 .iconLinks i:hover {
     color: var(--title-color);
     opacity: 80%;
-    filter: drop-shadow(0 0 5px var(--title-color))
+    filter: drop-shadow(0 0 5px var(--title-color));
+    cursor: pointer;
 }
 
 .mainContent {
@@ -206,6 +280,17 @@ body {
     background-color: #1d232b;
 }
 
+.contactContent {
+    height: 500px;
+}
+
+.footerContent {
+    width: 100%;
+    height: 200px;
+    background-color: var(--navBar-color);
+    box-shadow: 0 0 20px var(--navBar-color);
+}
+
 /* constant styles */
 
 .headerParaBreak {
@@ -219,6 +304,7 @@ body {
 hr {
     margin: auto;
     width: 50vw;
+    border-radius: 50%;
     opacity: 80%;
     filter: drop-shadow(0 0 20px #66fcf1)
 }
