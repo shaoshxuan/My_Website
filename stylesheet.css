@@ -20,7 +20,12 @@ html {
 
 body {
     background-color: var(--bg-color);
-    /* overflow-y: hidden; */
+    overflow-y: hidden;
+}
+
+body[data-aos-delay='7500'] [data-aos],
+[data-aos][data-aos][data-aos-delay='7500'] {
+  transition-delay: 7500ms;
 }
 
 ::-webkit-scrollbar {
