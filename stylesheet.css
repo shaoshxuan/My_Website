@@ -505,6 +505,69 @@ hr {
 }
 
 @media all and (max-width: 1500px){
+    .menuHamburger {
+        width: 50px;
+        height: 6px;
+        background: var(--bodyText-color);
+        border-radius: 5px;
+        box-shadow: 0 0 5px var(--header-color);
+        transition: all 0.3s ease 0s;
+        z-index: 1000;
+    }
+
+    .menuHamburger::before, .menuHamburger::after {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 6px;
+        background-color: var(--bodyText-color);
+        border-radius: 5px;
+        box-shadow: 0 0 5px var(--header-color);
+        transition: all 0.3s ease 0s;
+    }
+
+    .menuHamburger::before {
+        transform: translateY(-16px);
+    }
+
+    .menuHamburger::after {
+        transform: translateY(16px);
+    }
+
+    .menuHamburger.open {
+        transform: translateX(-50px);
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .menuHamburger.open::before {
+        transform: rotate(45deg) translate(35px, -35px);
+    }
+
+    .menuHamburger.open::after {
+        transform: rotate(-45deg) translate(35px, 35px);
+    }
+
+    header ul {
+        position: fixed;
+        top: 0;
+        right: -500px;
+        margin-left: auto;
+        padding: 100px 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100vh;
+        width: 400px;
+        text-align: center;
+        background-color: var(--navBar-color);
+        transition: all 0.5s ease 0s;
+    }
+
+    header ul li {
+        padding-top: 75px;
+    }
+
+    
     .projContainer {
         flex-direction: column-reverse;
         justify-content: flex-start;
@@ -515,10 +578,6 @@ hr {
     .projContainer.right {
         flex-direction: column;
         text-align: left;
-    }
-
-    .overview {
-        padding-left: 0;
     }
 
     .contentDesc.right {
@@ -537,6 +596,10 @@ hr {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .overview {
+        padding-left: 0;
     }
 
     .projContainer {

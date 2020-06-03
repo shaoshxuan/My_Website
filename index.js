@@ -1,6 +1,9 @@
-// Splash Screen FadeOut
 const splashScreen = document.querySelector(".splashScreen");
 
+const menuBtn = document.querySelector(".menuHamburger");
+const navLinks = document.querySelector("header ul");
+
+// Splash Screen FadeOut
 document.addEventListener("DOMContentLoaded", (e) => {
     setTimeout(() => {
         splashScreen.classList.add("fadeOut");
@@ -24,4 +27,22 @@ window.addEventListener("scroll", function(){
     } else {
         header.classList = "";
     }
+    menuBtn.classList.remove("open");
+    menuOpen = false;
+    navLinks.style.right = "-500px";
 })
+
+// Hamburger Menu Animation
+let menuOpen = false;
+
+menuBtn.addEventListener("click", () => {
+    if (!menuOpen){
+        menuBtn.classList.add("open");
+        menuOpen = true;
+        navLinks.style.right = "0";
+    } else {
+        menuBtn.classList.remove("open");
+        menuOpen = false;
+        navLinks.style.right = "-500px";
+    }
+});
