@@ -20,7 +20,7 @@ html {
 
 body {
     background-color: var(--bg-color);
-    /* overflow-y: hidden; */
+    overflow-y: hidden;
 }
 
 body[data-aos-delay='7500'] [data-aos],
