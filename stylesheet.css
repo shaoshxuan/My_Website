@@ -271,23 +271,98 @@ header ul li a:hover {
     padding-left: 20px;
 }
 
-.expHeader {
+.contentHeader {
     font-size: 24px;
 }
 
-.expRole {
+.contentSub {
     color: var(--title-color);
     font-size: 18px;
 }
 
-.expDate {
+.contentSmall {
     font-size: 14px;
     color: #c5c6c7b3;
 }
 
-.expDesc {
+.contentDesc {
     color: var(--bodyText-color);
     font-size: 18px;
+    padding: 0 10px 0 0;
+}
+
+.contentDesc.right {
+    padding: 0 0 0 10px;
+}
+
+.projContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+    border: 1px solid #c6c7c833;
+    border-radius: 2%/8%;
+    transition: all 0.3s ease 0s;
+}
+
+.projContainer.right {
+    text-align: right;
+}
+
+.projContainer:hover {
+    box-shadow: 0 0 20px var(--bodyText-color);
+    transform: scale(1.01);
+}
+
+.projImg {
+    position: relative;
+    padding: none;
+}
+
+.projImg img {
+    width: 500px;
+    height: 260px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    border: 1px solid var(--bg-color);
+}
+
+.projImg.private {
+    cursor: default;
+}
+
+.overlayContent {
+    position: absolute;
+    width: 100%;
+    height: 260px;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: var(--title-color);
+    font-size: 26px;
+    opacity: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease 0s;
+}
+
+.overlayContent.private {
+    color: red;
+}
+
+.overlayContent:hover {
+    background-color: #131920e6;
+    opacity: 100%;
+}
+
+.projTech {
+    z-index: 1000;
+    font-size: 16px;
+    color: var(--highlight-color);
+    text-shadow: 0 0 10px var(--highlight-color);
 }
 
 .contactContent {
@@ -382,7 +457,7 @@ hr {
 
 .titleText {
     color: var(--title-color);
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .bodyContent {
