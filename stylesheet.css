@@ -684,6 +684,10 @@ hr {
         white-space: nowrap;
     }
 
+    .footerContent {
+        padding: 50px 10px;
+    }
+
     .footerMe {
         font-size: 16px;
     }
