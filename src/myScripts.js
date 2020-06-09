@@ -2,7 +2,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const splash = document.querySelector(".splashScreen");
     const content = document.querySelector(".content");
-    console.log(content);
     setTimeout(() => {
         content.style.display = "block";
         splash.classList.add("fadeBack");
