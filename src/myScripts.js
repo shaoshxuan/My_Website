@@ -45,10 +45,10 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 
 // refreshing page bring user back to top //
-// window.onbeforeunload = () => {
-//     window.scrollTo(0, 0);
-// }
+window.onbeforeunload = () => {
+    window.scrollTo(0, 0);
+}
 
-// window.onload = () => {
-//     window.history.pushState({}, document.title, "/#home");
-// }
+window.onload = () => {
+    window.history.pushState({}, document.title, "/#home");
+}
