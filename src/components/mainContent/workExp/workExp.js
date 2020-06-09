@@ -15,7 +15,7 @@ class WorkExp extends React.Component {
                         return (
                             <div key={index}>
                                 <div className="landingBreak"></div>
-                                <div className="workExperience twoKContainer">
+                                <div className="workExperience twoKContainerWork">
                                     <div className="workLogoSummary">
                                         <div className="logoContainer">
                                             <a href={data.companyURL} target="_blank" rel="noopener noreferrer">

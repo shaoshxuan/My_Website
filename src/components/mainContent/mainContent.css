@@ -41,7 +41,14 @@
         padding: 10rem 5vw;
     }
 
-    .twoKContainer {
+    .twoKContainerWork {
         width: 40vw;
+    }
+}
+
+@media all and (min-width: 2750px){
+    .twoKContainerProj {
+        padding: 0 10vw;
+        width: 60vw;
     }
 }

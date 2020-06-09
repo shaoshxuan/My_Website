@@ -2,6 +2,14 @@
     background-color: var(--backgroundColor);
 }
 
+.pastProjects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .projectsDone {
     display: flex;
     flex-direction: row;
