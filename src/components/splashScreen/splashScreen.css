@@ -127,7 +127,7 @@
 
 @keyframes logoAppear {
     to {
-        opacity: 80%;
+        opacity: 10%;
         fill: #45a29e;
     }
 }
