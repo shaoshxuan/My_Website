@@ -9,6 +9,8 @@
     --bodyTextColor: #131920;
     --contrastColor: #e41376;
     --highlightColor: #fcbf49;
+
+    font-size: 16px;
 }
 
 ::-webkit-scrollbar {
