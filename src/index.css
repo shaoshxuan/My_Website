@@ -9,6 +9,8 @@
     --bodyTextColor: #131920;
     --contrastColor: #e41376;
     --highlightColor: #fcbf49;
+    
+    font-size: 14px;
 }
 
 ::-webkit-scrollbar {
@@ -43,7 +45,7 @@ body {
 
 @media all and (max-width: 950px) {
     :root {
-        font-size: 14px;
+        font-size: 13px;
     }
 }
 
