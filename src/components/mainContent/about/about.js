@@ -49,6 +49,7 @@ class About extends React.Component {
                                 <div>[ Flutter ]</div>
                                 <div>[ GatsbyJS ]</div>
                                 <div>[ VueJS ]</div>
+                                <div>[ Flask ]</div>
                             </div>
                         </div>
                     </div>
