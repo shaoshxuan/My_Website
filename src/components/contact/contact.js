@@ -26,7 +26,7 @@ class Contact extends React.Component {
                     <div className="connectContact">
                         <div><FontAwesomeIcon icon={['fas', "caret-right"]} className="glowingArrow" /></div>
                         <div><a href="mailto:shaoshxuan.chua@gmail.com" rel="noreferrer noopener" target="_blank"><FontAwesomeIcon icon={['fas', "envelope"]}/></a></div>
-                        <div><a href="mailto:shaoshxuan.chua@gmail.com" rel="noreferrer noopener" target="_blank"><FontAwesomeIcon icon={['fab', "linkedin"]}/></a></div>
+                        <div><a href="https://www.linkedin.com/in/shaoshxuanchua/" rel="noreferrer noopener" target="_blank"><FontAwesomeIcon icon={['fab', "linkedin"]}/></a></div>
                         <div><FontAwesomeIcon icon={['fas', "caret-left"]} className="glowingArrow" /></div>
                     </div>
                 </div>
