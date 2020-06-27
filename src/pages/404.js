@@ -4,6 +4,7 @@ import Head from '../components/head.js';
 import "./404styles/404.css";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCompass } from '@fortawesome/free-solid-svg-icons';
 
 const NotFoundPage = () => {
     return (
@@ -19,7 +20,7 @@ const NotFoundPage = () => {
                         This compass will show you the right way!
                     </div>
                     <Link to="/">
-                        <FontAwesomeIcon icon={['fas', "compass"]} className="FACompass" />
+                        <FontAwesomeIcon icon={ faCompass } className="FACompass" />
                     </Link>
                 </div>
             </div>
