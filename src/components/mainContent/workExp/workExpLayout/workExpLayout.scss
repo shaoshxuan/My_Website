@@ -1,0 +1,140 @@
+@import "../../../../styles/index.scss";
+
+.perWorkExp {
+    margin: 1rem;
+    padding: 1rem;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .workOverview {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        .companyLogo {
+            width: 12rem;
+            height: 7rem;
+            background-color: $primaryBG;
+            border-radius: 0.5rem;
+            transition: all 0.3s ease 0s;
+
+            &:hover {
+                box-shadow: 0 0 15px $primaryBG;
+                opacity: 0.7;
+            }
+
+            img {
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 10rem;
+            }
+        }
+
+        .workSummary {
+            margin: 1rem;
+
+            .companyName {
+                font-size: 1.3rem;
+                font-weight: 400;
+                color: $primaryPink;
+            }
+
+            .workRole {
+                font-size: 1.1rem;
+                font-weight: 400;
+                color: $secondaryBlue;
+            }
+
+            .workPeriod {
+                font-size: 0.9rem;
+                font-weight: 300;
+                color: $primaryNavy;
+            }
+        }
+    }
+    .workDesc {
+        margin: 0.5rem;
+        font-size: 1rem;
+        font-weight: 400;
+        color: $primaryNavy;
+    }
+}
+
+@media all and (max-width: 960px){
+    .perWorkExp {
+        margin: 0.5rem;
+        padding: 0.5rem;
+        width: 80%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        .workOverview {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            .workSummary {
+                margin: 0.5rem;
+                text-align: center;
+    
+                .companyName {
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                }
+    
+                .workRole {
+                    font-size: 1rem;
+                }
+    
+                .workPeriod {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+        .workDesc {
+            font-size: 0.9rem;
+            text-align: center;
+        }
+    }
+}
+
+@media all and (max-width: 480px){
+    .perWorkExp {
+        width: 95%;
+    
+        .workOverview {
+            .companyLogo {
+                width: 10rem;
+                height: 6rem;
+
+                img {
+                    width: 8rem;
+                }
+            }
+            .workSummary {
+                .companyName {
+                    font-size: 1rem;
+                    font-weight: 400;
+                }
+    
+                .workRole {
+                    font-size: 0.8rem;
+                }
+    
+                .workPeriod {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+        .workDesc {
+            font-size: 0.8rem;
+        }
+    }
+}

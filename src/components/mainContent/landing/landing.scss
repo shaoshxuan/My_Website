@@ -1,0 +1,183 @@
+@import "../../../styles/index.scss";
+
+.landing {
+    width: 100%;
+    height: 100vh;
+    background-color: $primaryNavy;
+
+    #tsparticles {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: inherit;
+        height: inherit;
+    }
+
+    .landingContent {
+        width: inherit;
+        height: inherit;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .iBuild {
+            position: relative;
+            z-index: 80;
+            font-size: 1.4rem;
+            font-weight: 300;
+            color: $secondaryBlue;
+        }
+
+        .iBuildWhat {
+            position: relative;
+            z-index: 80;
+            font-size: 2.2rem;
+            font-weight: 300;
+            color: $primaryCyan;
+            line-height: 1.2;
+        }
+
+        .landingWhoAmI {
+            position: relative;
+            z-index: 80;
+            font-size: 1rem;
+            font-weight: 300;
+            color: $primaryBG;
+
+            .landingName {
+                color: #e41376;
+                font-size: 1.2rem;
+                font-weight: 400;
+            }
+        }
+
+        .profileLinks a {
+            position: relative;
+            z-index: 80;
+            padding: 0 0.8rem;
+            display: inline-block;
+            font-size: 3rem;
+            color: $primaryBG;
+            opacity: 0.4;
+            transition: all 0.3s ease 0s;
+
+            &:hover {
+                color: $primaryCyan;
+                opacity: 1;
+                transform: scale(1.05);
+                filter: drop-shadow(0 0 5px $primaryCyan)
+            }
+        }
+
+        .landingQuote {
+            position: relative;
+            z-index: 80;
+            font-size: 0.8rem;
+            font-weight: 200;
+            font-style: italic;
+            color: $primaryBG;
+        }
+
+        .startView {
+            position: absolute;
+            bottom: 0;
+            font-size: 2.5rem;
+            a {
+                display: inline-block;
+                color: $primaryCyan;
+                animation: bounceArrow 2s infinite;
+            }
+        }
+    }
+}
+
+.landingBreak {
+    padding: 0.8rem 0;
+}
+
+@media all and (max-width: 960px){
+    .landing {
+        .landingContent {
+            .iBuild {
+                font-size: 1.3rem;
+            }
+    
+            .iBuildWhat {
+                font-size: 1.9rem;
+            }
+    
+            .landingWhoAmI {
+                .landingName {
+                    color: #e41376;
+                    font-size: 1.1rem;
+                    font-weight: 400;
+                }
+            }
+
+            .startView {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 480px){
+    .landing {
+        .landingContent {
+            .iBuild {
+                font-size: 1.2rem;
+            }
+    
+            .iBuildWhat {
+                font-size: 1.6rem;
+            }
+    
+            .landingWhoAmI {
+                font-size: 0.8rem;
+
+                .landingName {
+                    color: #e41376;
+                    font-size: 1rem;
+                    font-weight: 400;
+                }
+            }
+    
+            .profileLinks a {
+                font-size: 2rem;
+            }
+    
+            .landingQuote {
+                font-size: 0.6rem;
+            }
+
+            .startView {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+@keyframes bounceArrow {
+    0% {
+        transform: translateY(0);
+        filter: drop-shadow(0 0 0px $primaryCyan);
+    }
+    40% {
+        transform: translateY(-1rem);
+        filter: drop-shadow(0 0 5px $primaryCyan);
+    }
+    60% {
+        transform: translateY(0);
+        filter: drop-shadow(0 0 0px $primaryCyan);
+    }
+    80% {
+        transform: translateY(-0.5rem);
+        filter: drop-shadow(0 0 5px $primaryCyan);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

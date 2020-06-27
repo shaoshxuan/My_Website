@@ -1,0 +1,155 @@
+@import "../../styles/index.scss";
+
+.splashScreen.fade {
+    opacity: 0;
+    z-index: -10;
+}
+
+.splashScreen {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient($primaryNavy, $navBarColor);
+
+    opacity: 1;
+    z-index: 200;
+    transition: all 1s ease 0s;
+
+    .myName {
+        width: 18rem;
+        text-align: center;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: shadowLogo 1s ease 3s forwards;
+    }
+}
+
+#myLogo path:nth-child(1) {
+    stroke-dasharray: 246.9565887451172;
+    stroke-dashoffset: 246.9565887451172;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    animation: animateLinesE 3s ease forwards;
+}
+#myLogo path:nth-child(2) {
+    stroke-dasharray: 267.26397705078125;
+    stroke-dashoffset: 267.26397705078125;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    animation: animateLinesE 3s ease forwards;
+}
+#myLogo path:nth-child(3) {
+    stroke-dasharray: 245.14601135253906;
+    stroke-dashoffset: 245.14601135253906;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    animation: animateLinesE 3s ease forwards;
+}
+#myLogo path:nth-child(4) {
+    stroke-dasharray: 282.9757080078125;
+    stroke-dashoffset: 282.9757080078125;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    animation: animateLinesE 3s ease forwards;
+}
+#myLogo path:nth-child(5) {
+    stroke-dasharray: 246.95668029785156;
+    stroke-dashoffset: 246.95668029785156;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    animation: animateLinesE 3s ease forwards;
+}
+#myLogo path:nth-child(6) {
+    stroke-dasharray: 267.26397705078125;
+    stroke-dashoffset: 267.26397705078125;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    animation: animateLinesE 3s ease forwards;
+}
+#myLogo path:nth-child(7) {
+    stroke-dasharray: 238.68447875976562;
+    stroke-dashoffset: 238.68447875976562;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    animation: animateLinesE 3s ease forwards;
+}
+#myLogo path:nth-child(8) {
+    stroke-dasharray: 241.9464111328125;
+    stroke-dashoffset: 241.9464111328125;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    animation: animateLinesE 3s ease forwards;
+}
+#myLogo path:nth-child(9) {
+    stroke-dasharray: 245.14599609375;
+    stroke-dashoffset: 245.14599609375;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    animation: animateLinesE 3s ease forwards;
+}
+#myLogo path:nth-child(10) {
+    stroke-dasharray: 302.24151611328125;
+    stroke-dashoffset: 302.24151611328125;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    animation: animateLinesE 3s ease forwards;
+}
+#myLogo path:nth-child(11) {
+    stroke-dasharray: 778.3828735351562;
+    stroke-dashoffset: 778.3828735351562;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    animation: animateLinesC 3s ease forwards;
+}
+#myLogo path:nth-child(12) {
+    stroke-dasharray: 547.6275634765625;
+    stroke-dashoffset: 547.6275634765625;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    animation: animateLinesC 3s ease forwards;
+}
+
+@keyframes animateLinesE {
+    from {
+        stroke: $primaryBG;
+    }
+    to {
+        stroke: $primaryCyan;
+        stroke-width: 2;
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes animateLinesC {
+    from {
+        stroke: $secondaryBG;
+    }
+    to {
+        stroke: $primaryPink;
+        stroke-width: 2;
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes shadowLogo {
+    to {
+        filter: drop-shadow(0 0 3px $secondaryBG);
+    }
+}
+
+@media all and (max-width: 960px){
+    .splashScreen {
+        .myName {
+            width: 35vw;
+        }
+    }
+}
+
+@media all and (max-width: 480px){
+    .splashScreen {
+        .myName {
+            width: 40vw;
+        }
+    }
+}

@@ -105,31 +105,29 @@
   }
 }
 
-.splashScreen {
-  opacity: 1;
-  z-index: 200;
-}
-
-.splashScreenFade {
-  opacity: 0;
-  z-index: -10;
-}
-
 .block {
   display: none;
 }
 
-.workExp {
-  width: 100%;
-  background-color: #f3f1f1;
+.perProjContainer {
+  margin: 0.2rem;
+  width: 22.5rem;
+  height: 12.6rem;
 }
 
-.workExp .worksContainer {
-  position: relative;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  width: 65rem;
+.perProjContainer .projPreview {
+  position: absolute;
+}
+
+.perProjContainer .projPreview img {
+  width: 22.5rem;
+  border-radius: 0.5rem;
+}
+
+.perProjContainer .projHoverDetails {
+  position: absolute;
+  width: inherit;
+  height: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -137,30 +135,75 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 80;
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #192129;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 
-@media all and (max-width: 1440px) {
-  .workExp .worksContainer {
-    width: 70vw;
-  }
+.perProjContainer .projHoverDetails .projName {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #66fcf1;
 }
 
-@media all and (max-width: 960px) {
-  .workExp .worksContainer {
-    width: 80vw;
-  }
+.perProjContainer .projHoverDetails .techUsed {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.perProjContainer .projHoverDetails a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #ffffff;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  padding: 0.2rem 0.7rem;
+  border: 1.4px solid #66fcf1;
+  border-radius: 2rem;
+}
+
+.perProjContainer .projHoverDetails a:hover {
+  color: #192129;
+  background-color: #66fcf1;
+}
+
+.perProjContainer .projHoverDetails:hover {
+  opacity: 1;
 }
 
 @media all and (max-width: 480px) {
-  .workExp .worksContainer {
-    width: 95vw;
+  .perProjContainer {
+    width: 19.2rem;
+    height: 10.8rem;
+  }
+  .perProjContainer .projPreview img {
+    width: 19.2rem;
+  }
+  .perProjContainer .projHoverDetails .projName {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  .perProjContainer .projHoverDetails .techUsed {
+    font-size: 0.8rem;
+    font-weight: 300;
+  }
+  .perProjContainer .projHoverDetails a {
+    font-size: 0.8rem;
+    font-weight: 300;
   }
 }
-/*# sourceMappingURL=workExp.css.map */
+/*# sourceMappingURL=projectsLayout.css.map */

@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #0b0c10;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #c5c6c7;
+}
+
+.sectionPad {
+  padding: 5rem;
+}
+
+.sectionHeader {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #192129;
+}
+
+.subHeader {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #45a29e;
+  line-height: 1.2;
+  padding-bottom: 0.75rem;
+}
+
+.constantBreak {
+  padding: 0.8rem;
+}
+
+.paraBreak {
+  padding: 0.2rem;
+}
+
+@media all and (min-width: 2401px) {
+  :root {
+    font-size: 20px;
+  }
+}
+
+@media all and (max-width: 2400px) {
+  :root {
+    font-size: 18px;
+  }
+}
+
+@media all and (max-width: 1920px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+@media all and (max-width: 1440px) {
+  :root {
+    font-size: 15px;
+  }
+}
+
+@media all and (max-width: 960px) {
+  :root {
+    font-size: 14px;
+  }
+  .sectionPad {
+    padding: 4rem;
+  }
+  .sectionHeader {
+    font-size: 1.5rem;
+  }
+  .subHeader {
+    font-size: 1.1rem;
+  }
+  .constantBreak {
+    padding: 0.6rem;
+  }
+}
+
+@media all and (max-width: 480px) {
+  :root {
+    font-size: 13px;
+  }
+  .sectionPad {
+    padding: 3rem;
+  }
+  .sectionHeader {
+    font-size: 1.3rem;
+  }
+  .subHeader {
+    font-size: 1rem;
+  }
+  .constantBreak {
+    padding: 0.4rem;
+  }
+}
+
+.splashScreen {
+  opacity: 1;
+  z-index: 200;
+}
+
+.splashScreenFade {
+  opacity: 0;
+  z-index: -10;
+}
+
+.block {
+  display: none;
+}
+
+.perProjectInfo {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #192129;
+}
+
+.perProjectInfo .projInfoContainer {
+  padding: 10rem 2rem 0 2rem;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 70vw;
+}
+
+.perProjectInfo .projInfoContainer .projSummary {
+  padding: 1rem 5rem;
+}
+
+.perProjectInfo .projInfoContainer .projSummary .projYear {
+  padding: 0.2rem 0.5rem;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #192129;
+  background-color: #66fcf1;
+  border-radius: 0.5rem;
+}
+
+.perProjectInfo .projInfoContainer .projSummary .projTitle {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.perProjectInfo .projInfoContainer .projSummary .projType {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #66fcf1;
+}
+
+.perProjectInfo .projInfoContainer .projSummary .projBreaker {
+  -webkit-box-shadow: 0 0 5px #ffffff;
+          box-shadow: 0 0 5px #ffffff;
+}
+
+.perProjectInfo .projInfoContainer .projSummary .projBGHeader {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #66fcf1;
+}
+
+.perProjectInfo .projInfoContainer .projSummary .projDesc {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.perProjectInfo .projInfoContainer .projSummary .projLink {
+  font-size: 0.9rem;
+  font-weight: 200;
+  color: #ffffff;
+}
+
+.perProjectInfo .projInfoContainer .projSummary .projLink a {
+  font-size: 1rem;
+  font-weight: 300;
+  text-decoration: none;
+  color: #66fcf1;
+}
+
+.perProjectInfo .projInfoContainer .projSummary .projLink a:active {
+  color: #e41376;
+}
+
+.perProjectInfo .projInfoContainer .projStaticImg {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #66fcf1;
+}
+
+.perProjectInfo .projInfoContainer .projStaticImg img {
+  width: 100%;
+}
+
+.perProjectInfo .projInfoContainer .viewMoreProj {
+  text-align: center;
+  padding: 3rem;
+}
+
+.perProjectInfo .projInfoContainer .viewMoreProj a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border: 1.5px solid #66fcf1;
+  border-radius: 1rem;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.perProjectInfo .projInfoContainer .viewMoreProj a:hover {
+  color: #192129;
+  background-color: #66fcf1;
+}
+
+@media all and (max-width: 960px) {
+  .perProjectInfo .projInfoContainer {
+    padding: 6rem 2rem 0 2rem;
+    width: 85vw;
+  }
+  .perProjectInfo .projInfoContainer .projSummary {
+    padding: 1rem;
+  }
+  .perProjectInfo .projInfoContainer .projSummary .projYear {
+    font-size: 1rem;
+  }
+  .perProjectInfo .projInfoContainer .projSummary .projTitle {
+    font-size: 1.6rem;
+  }
+  .perProjectInfo .projInfoContainer .projSummary .projType {
+    font-size: 0.9rem;
+  }
+  .perProjectInfo .projInfoContainer .projSummary .projBGHeader {
+    font-size: 1rem;
+  }
+  .perProjectInfo .projInfoContainer .projSummary .projDesc {
+    font-size: 0.9rem;
+  }
+  .perProjectInfo .projInfoContainer .projSummary .projLink {
+    font-size: 0.8rem;
+  }
+  .perProjectInfo .projInfoContainer .projSummary .projLink a {
+    font-size: 0.9rem;
+  }
+  .perProjectInfo .projInfoContainer .projStaticImg {
+    text-align: left;
+    font-size: 1rem;
+  }
+  .perProjectInfo .projInfoContainer .viewMoreProj {
+    padding: 2rem;
+  }
+  .perProjectInfo .projInfoContainer .viewMoreProj a {
+    font-size: 0.9rem;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .perProjectInfo .projInfoContainer {
+    padding: 4rem 1rem 0 1rem;
+    width: 95vw;
+  }
+  .perProjectInfo .projInfoContainer .projSummary {
+    padding: 1rem;
+  }
+  .perProjectInfo .projInfoContainer .projSummary .projYear {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+  .perProjectInfo .projInfoContainer .projSummary .projTitle {
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+  .perProjectInfo .projInfoContainer .projSummary .projType {
+    font-size: 0.8rem;
+    font-weight: 300;
+  }
+  .perProjectInfo .projInfoContainer .projSummary .projBGHeader {
+    font-size: 0.9rem;
+    font-weight: 300;
+  }
+  .perProjectInfo .projInfoContainer .projSummary .projDesc {
+    font-size: 0.8rem;
+    font-weight: 300;
+  }
+  .perProjectInfo .projInfoContainer .projSummary .projLink {
+    font-size: 0.8rem;
+  }
+  .perProjectInfo .projInfoContainer .projSummary .projLink a {
+    font-size: 0.9rem;
+  }
+  .perProjectInfo .projInfoContainer .projStaticImg {
+    text-align: left;
+    font-size: 0.9rem;
+    font-weight: 300;
+  }
+  .perProjectInfo .projInfoContainer .viewMoreProj a {
+    font-size: 0.8rem;
+    font-weight: 300;
+    border: 1.3px solid #66fcf1;
+  }
+}
+/*# sourceMappingURL=projectTemplate.css.map */

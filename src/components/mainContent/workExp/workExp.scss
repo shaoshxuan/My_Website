@@ -1,0 +1,42 @@
+@import "../../../styles/index.scss";
+
+.workExp {
+    width: 100%;
+    background-color: $secondaryBG;
+    
+    .worksContainer {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 65rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        z-index: 80;
+    }
+}
+
+@media all and (max-width: 1440px){
+    .workExp {
+        .worksContainer {
+            width: 70vw;
+        }
+    }
+}
+
+@media all and (max-width: 960px){
+    .workExp {
+        .worksContainer {
+            width: 80vw;
+        }
+    }
+}
+
+@media all and (max-width: 480px){
+    .workExp {
+        .worksContainer {
+            width: 95vw;
+        }
+    }
+}

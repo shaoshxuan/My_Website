@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$navBarColor: #0b0c10;
+$primaryNavy: #192129;
+$primaryCyan: #66fcf1;
+$primaryPink: #e41376;
+$secondaryBlue: #45a29e;
+$primaryBG: #ffffff;
+$secondaryBG: #f3f1f1;
+
+* {
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: $navBarColor;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: #c5c6c7;
+}
+
+.sectionPad {
+    padding: 5rem;
+}
+
+.sectionHeader {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: $primaryNavy;
+}
+
+.subHeader {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: $secondaryBlue;
+    line-height: 1.2;
+    padding-bottom: 0.75rem;
+}
+
+.constantBreak {
+    padding: 0.8rem
+}
+
+.paraBreak {
+    padding: 0.2rem
+}
+
+@media all and (min-width: 2401px){
+    :root {
+        font-size: 20px;
+    }
+}
+
+@media all and (max-width: 2400px){
+    :root {
+        font-size: 18px;
+    }
+}
+
+@media all and (max-width: 1920px){
+    :root {
+        font-size: 16px;
+    }
+}
+
+@media all and (max-width: 1440px){
+    :root {
+        font-size: 15px;
+    }
+}
+
+@media all and (max-width: 960px){
+    :root {
+        font-size: 14px;
+    }
+
+    .sectionPad {
+        padding: 4rem;
+    }
+
+    .sectionHeader {
+        font-size: 1.5rem;
+    }
+
+    .subHeader {
+        font-size: 1.1rem;
+    }
+
+    .constantBreak {
+        padding: 0.6rem
+    }
+}
+
+@media all and (max-width: 480px){
+    :root {
+        font-size: 13px;
+    }
+
+    .sectionPad {
+        padding: 3rem;
+    }
+
+    .sectionHeader {
+        font-size: 1.3rem;
+    }
+
+    .subHeader {
+        font-size: 1rem;
+    }
+
+    .constantBreak {
+        padding: 0.4rem
+    }
+}
+
+.block {
+    display: none;
+}
+

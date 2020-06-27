@@ -109,44 +109,85 @@
   display: none;
 }
 
-.projects {
+.notFound {
   width: 100%;
-  background-color: #ffffff;
+  height: 100vh;
+  background-color: #192129;
 }
 
-.projects .embarkedProjectsContainer {
+.notFound img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.notFound .notFoundTextContainer {
   position: relative;
+  top: 50%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  width: 70vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  z-index: 80;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 90vw;
+  text-align: center;
+}
+
+.notFound .notFoundTextContainer .errorCode {
+  font-size: 4rem;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 2rem 0;
+}
+
+.notFound .notFoundTextContainer .compassText {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #ffffff;
+  padding: 1rem 0;
+}
+
+.notFound .notFoundTextContainer a {
+  display: inline-block;
+  font-size: 3.5rem;
+  color: #ffffff;
+  opacity: 0.5;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.notFound .notFoundTextContainer a:hover {
+  color: #ffffff;
+  opacity: 1;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-filter: drop-shadow(0 0 10px #ffffff);
+          filter: drop-shadow(0 0 10px #ffffff);
 }
 
 @media all and (max-width: 960px) {
-  .projects .embarkedProjectsContainer {
-    width: 85vw;
+  .notFound .notFoundTextContainer .errorCode {
+    font-size: 3rem;
+  }
+  .notFound .notFoundTextContainer .compassText {
+    font-size: 1.2rem;
+  }
+  .notFound .notFoundTextContainer a {
+    font-size: 3rem;
   }
 }
 
 @media all and (max-width: 480px) {
-  .projects .embarkedProjectsContainer {
-    width: 90vw;
+  .notFound .notFoundTextContainer .errorCode {
+    font-size: 2rem;
+  }
+  .notFound .notFoundTextContainer .compassText {
+    font-size: 1rem;
+  }
+  .notFound .notFoundTextContainer a {
+    font-size: 2.5rem;
   }
 }
-/*# sourceMappingURL=projects.css.map */
+/*# sourceMappingURL=404.css.map */

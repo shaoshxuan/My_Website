@@ -1,0 +1,131 @@
+@import "../../../styles/index.scss";
+
+.topSepBar {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 0.2rem;
+    background-color: $primaryPink;
+    box-shadow: 0 0 20px $primaryPink;
+}
+
+.about {
+    width: 100%;
+
+    .aboutInfo {
+        width: 50rem;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+
+        .myDP img {
+            margin: 1.5rem;
+            width: 13rem;
+            filter: drop-shadow(0 0 8px $primaryCyan);
+        }
+
+        .aboutMeContent {
+            font-size: 1rem;
+            font-weight: 400;
+            color: $primaryNavy;
+        }
+    }
+
+    .languages {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+
+        .language {
+            padding: 0 0.1rem;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+    }
+
+    .frameworks {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+
+        .framework {
+            padding: 0 0.1rem;
+            font-size: 1rem;
+            font-weight: 400;
+            color: $primaryPink;
+        }
+    }
+}
+
+@media all and (max-width: 1440px){
+    .about {
+        .aboutInfo {
+            width: 60vw;
+
+            .myDP img {
+                margin: 1.5rem;
+                width: 12rem;
+                filter: drop-shadow(0 0 8px $primaryCyan);
+            }
+        }
+        
+    }
+}
+
+@media all and (max-width: 960px){
+    .about {      
+        .aboutInfo {
+            width: 70vw;
+
+            .aboutMeContent {
+                font-size: 1rem;
+                font-weight: 400;
+                color: $primaryNavy;
+            }
+        }
+
+        .languages {
+            .language {
+                font-size: 0.9rem;
+            }
+        }
+
+        .frameworks {
+            .framework {
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 480px){
+    .about {    
+        .aboutInfo {
+            width: 90vw;
+            .aboutMeContent {
+                font-size: 0.9rem;
+            }
+        
+            .languages {
+                .language {
+                    font-size: 0.8rem;
+                }
+            }
+    
+            .frameworks {
+                .framework {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}

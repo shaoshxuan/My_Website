@@ -1,0 +1,137 @@
+@import "../../../styles/index.scss";
+
+.contact {
+    width: 100%;
+    background-color: $primaryNavy;
+    border-top: 0.2rem solid $primaryPink;
+    text-align: center;
+    box-shadow: 0 0 20px $primaryPink;
+
+    .contactHeader {
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 300;
+        color: $primaryBG;
+    }
+    
+    .contactSubHeader {
+        font-size: 1.2rem;
+        color: $primaryCyan;
+    }
+
+    .contactSub {
+        font-size: 0.8rem;
+        font-weight: 200;
+        color: $secondaryBG;
+    }
+
+    .contactBody {
+        font-size: 0.9rem;
+        font-weight: 300;
+        color: $primaryBG;
+    }
+
+    .connectContact {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        div {
+            padding: 0 1rem;
+            font-size: 2.5rem;
+        }
+
+        a {
+            display: inline-block;
+            color: $primaryBG;
+            opacity: 0.2;
+            transition: all 0.3s ease 0s;
+
+            &:hover {
+                color: $primaryCyan;
+                filter: drop-shadow(0 0 5px $primaryCyan);;
+                opacity: 1;
+            }
+        }
+
+        .glowingArrow {
+            font-size: 2rem;
+            animation: pulseGlow 2s linear infinite;
+            color: $primaryPink;
+        }
+    }
+}
+
+@keyframes pulseGlow {
+    0% {
+        filter: drop-shadow(0 0 0 $primaryPink);
+    }
+    40% {
+        filter: drop-shadow(0 0 10px $primaryPink);
+    }
+    80% {
+        filter: drop-shadow(0 0 5px $primaryPink);
+    }
+    100% {
+        filter: drop-shadow(0 0 0 $primaryPink);
+    }
+}
+
+@media all and (max-width: 960px){
+    .contact {
+        .contactHeader {
+            font-size: 1.5rem;
+        }
+
+        .contactSubHeader {
+            font-size: 1.1rem;
+        }
+    
+        .contactBody {
+            font-size: 0.8rem;
+            font-weight: 300;
+        }
+    
+        .connectContact {
+            div {
+                font-size: 2rem;
+            }
+    
+            .glowingArrow {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 480px){
+    .contact {
+        .contactHeader {
+            font-size: 1.3rem;
+        }
+
+        .contactSubHeader {
+            font-size: 1rem;
+        }
+
+        .contactSub {
+            font-size: 0.7rem;
+        }
+    
+        .contactBody {
+            font-size: 0.8rem;
+            font-weight: 300;
+        }
+    
+        .connectContact {
+            div {
+                font-size: 1.8rem;
+            }
+    
+            .glowingArrow {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}

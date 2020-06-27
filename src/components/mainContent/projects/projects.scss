@@ -1,0 +1,35 @@
+@import "../../../styles/index.scss";
+
+.projects {
+    width: 100%;
+    background-color: $primaryBG;
+    
+    .embarkedProjectsContainer {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        z-index: 80;
+    }
+}
+
+@media all and (max-width: 960px){
+    .projects {
+        .embarkedProjectsContainer {
+            width: 85vw;
+        }
+    }
+}
+
+@media all and (max-width: 480px){
+    .projects {
+        .embarkedProjectsContainer {
+            width: 90vw;
+        }
+    }
+}

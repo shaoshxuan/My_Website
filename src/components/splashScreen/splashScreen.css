@@ -1,135 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #0b0c10;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #c5c6c7;
+}
+
+.sectionPad {
+  padding: 5rem;
+}
+
+.sectionHeader {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #192129;
+}
+
+.subHeader {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #45a29e;
+  line-height: 1.2;
+  padding-bottom: 0.75rem;
+}
+
+.constantBreak {
+  padding: 0.8rem;
+}
+
+.paraBreak {
+  padding: 0.2rem;
+}
+
+@media all and (min-width: 2401px) {
+  :root {
+    font-size: 20px;
+  }
+}
+
+@media all and (max-width: 2400px) {
+  :root {
+    font-size: 18px;
+  }
+}
+
+@media all and (max-width: 1920px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+@media all and (max-width: 1440px) {
+  :root {
+    font-size: 15px;
+  }
+}
+
+@media all and (max-width: 960px) {
+  :root {
+    font-size: 14px;
+  }
+  .sectionPad {
+    padding: 4rem;
+  }
+  .sectionHeader {
+    font-size: 1.5rem;
+  }
+  .subHeader {
+    font-size: 1.1rem;
+  }
+  .constantBreak {
+    padding: 0.6rem;
+  }
+}
+
+@media all and (max-width: 480px) {
+  :root {
+    font-size: 13px;
+  }
+  .sectionPad {
+    padding: 3rem;
+  }
+  .sectionHeader {
+    font-size: 1.3rem;
+  }
+  .subHeader {
+    font-size: 1rem;
+  }
+  .constantBreak {
+    padding: 0.4rem;
+  }
+}
+
+.block {
+  display: none;
+}
+
+.splashScreen.fade {
+  opacity: 0;
+  z-index: -10;
+}
+
 .splashScreen {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background-color: #1f2833;
-    z-index: 5000;
-    transition: all 0.5s ease 0s;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#192129), to(#0b0c10));
+  background-image: linear-gradient(#192129, #0b0c10);
+  opacity: 1;
+  z-index: 200;
+  -webkit-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
 }
 
-.splashScreen.fadeBack {
-    opacity: 0;
-    z-index: -10;
-}
-
-#myLogo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 30%;
-    max-width: 15em;
-    background-color: transparent;
-    animation: fillLogo 1s ease 3s forwards;
+.splashScreen .myName {
+  width: 18rem;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation: shadowLogo 1s ease 3s forwards;
+          animation: shadowLogo 1s ease 3s forwards;
 }
 
 #myLogo path:nth-child(1) {
-    stroke-dasharray: 326.38812255859375;
-    stroke-dashoffset: 326.38812255859375;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    animation: animateLines 3s ease forwards;
+  stroke-dasharray: 246.9565887451172;
+  stroke-dashoffset: 246.9565887451172;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  -webkit-animation: animateLinesE 3s ease forwards;
+          animation: animateLinesE 3s ease forwards;
 }
+
 #myLogo path:nth-child(2) {
-    stroke-dasharray: 355.5840148925781;
-    stroke-dashoffset: 355.5840148925781;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    animation: animateLines 3s ease forwards;
+  stroke-dasharray: 267.26397705078125;
+  stroke-dashoffset: 267.26397705078125;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  -webkit-animation: animateLinesE 3s ease forwards;
+          animation: animateLinesE 3s ease forwards;
 }
+
 #myLogo path:nth-child(3) {
-    stroke-dasharray: 321.90869140625;
-    stroke-dashoffset: 321.90869140625;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    animation: animateLines 3s ease forwards;
+  stroke-dasharray: 245.14601135253906;
+  stroke-dashoffset: 245.14601135253906;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  -webkit-animation: animateLinesE 3s ease forwards;
+          animation: animateLinesE 3s ease forwards;
 }
+
 #myLogo path:nth-child(4) {
-    stroke-dasharray: 366.57940673828125;
-    stroke-dashoffset: 366.57940673828125;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    animation: animateLines 3s ease forwards;
+  stroke-dasharray: 282.9757080078125;
+  stroke-dashoffset: 282.9757080078125;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  -webkit-animation: animateLinesE 3s ease forwards;
+          animation: animateLinesE 3s ease forwards;
 }
+
 #myLogo path:nth-child(5) {
-    stroke-dasharray: 326.38873291015625;
-    stroke-dashoffset: 326.38873291015625;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    animation: animateLines 3s ease forwards;
+  stroke-dasharray: 246.95668029785156;
+  stroke-dashoffset: 246.95668029785156;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  -webkit-animation: animateLinesE 3s ease forwards;
+          animation: animateLinesE 3s ease forwards;
 }
+
 #myLogo path:nth-child(6) {
-    stroke-dasharray: 355.5832214355469;
-    stroke-dashoffset: 355.5832214355469;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    animation: animateLines 3s ease forwards;
+  stroke-dasharray: 267.26397705078125;
+  stroke-dashoffset: 267.26397705078125;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  -webkit-animation: animateLinesE 3s ease forwards;
+          animation: animateLinesE 3s ease forwards;
 }
+
 #myLogo path:nth-child(7) {
-    stroke-dasharray: 319.6272888183594;
-    stroke-dashoffset: 319.6272888183594;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    animation: animateLines 3s ease forwards;
+  stroke-dasharray: 238.68447875976562;
+  stroke-dashoffset: 238.68447875976562;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  -webkit-animation: animateLinesE 3s ease forwards;
+          animation: animateLinesE 3s ease forwards;
 }
+
 #myLogo path:nth-child(8) {
-    stroke-dasharray: 322.321044921875;
-    stroke-dashoffset: 322.321044921875;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    animation: animateLines 3s ease forwards;
+  stroke-dasharray: 241.9464111328125;
+  stroke-dashoffset: 241.9464111328125;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  -webkit-animation: animateLinesE 3s ease forwards;
+          animation: animateLinesE 3s ease forwards;
 }
+
 #myLogo path:nth-child(9) {
-    stroke-dasharray: 321.90863037109375;
-    stroke-dashoffset: 321.90863037109375;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    animation: animateLines 3s ease forwards;
+  stroke-dasharray: 245.14599609375;
+  stroke-dashoffset: 245.14599609375;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  -webkit-animation: animateLinesE 3s ease forwards;
+          animation: animateLinesE 3s ease forwards;
 }
+
 #myLogo path:nth-child(10) {
-    stroke-dasharray: 396.3233947753906;
-    stroke-dashoffset: 396.3233947753906;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    animation: animateLines 3s ease forwards;
+  stroke-dasharray: 302.24151611328125;
+  stroke-dashoffset: 302.24151611328125;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  -webkit-animation: animateLinesE 3s ease forwards;
+          animation: animateLinesE 3s ease forwards;
 }
 
-@keyframes animateLines {
-    from {
-        stroke: #c5c6c7;
-    }
-    to {
-        stroke: #45a29e;
-        stroke-width: 1;
-        stroke-dashoffset: 0;
-    }
+#myLogo path:nth-child(11) {
+  stroke-dasharray: 778.3828735351562;
+  stroke-dashoffset: 778.3828735351562;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  -webkit-animation: animateLinesC 3s ease forwards;
+          animation: animateLinesC 3s ease forwards;
 }
 
-@keyframes fillLogo {
-    from {
-        fill: transparent;
-    }
-    to {
-        fill: #66fcf1;
-        filter: drop-shadow(0 0 5px #66fcf1);
-    }
+#myLogo path:nth-child(12) {
+  stroke-dasharray: 547.6275634765625;
+  stroke-dashoffset: 547.6275634765625;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  -webkit-animation: animateLinesC 3s ease forwards;
+          animation: animateLinesC 3s ease forwards;
 }
 
-#shaoIcon {
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50%;
-    max-width: 25em;
-    opacity: 0;
-    animation: logoAppear 2s ease 3s forwards;
+@-webkit-keyframes animateLinesE {
+  from {
+    stroke: #ffffff;
+  }
+  to {
+    stroke: #66fcf1;
+    stroke-width: 2;
+    stroke-dashoffset: 0;
+  }
 }
 
-@keyframes logoAppear {
-    to {
-        opacity: 0.075;
-        fill: #45a29e;
-    }
+@keyframes animateLinesE {
+  from {
+    stroke: #ffffff;
+  }
+  to {
+    stroke: #66fcf1;
+    stroke-width: 2;
+    stroke-dashoffset: 0;
+  }
 }
+
+@-webkit-keyframes animateLinesC {
+  from {
+    stroke: #f3f1f1;
+  }
+  to {
+    stroke: #e41376;
+    stroke-width: 2;
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes animateLinesC {
+  from {
+    stroke: #f3f1f1;
+  }
+  to {
+    stroke: #e41376;
+    stroke-width: 2;
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes shadowLogo {
+  to {
+    -webkit-filter: drop-shadow(0 0 3px #f3f1f1);
+            filter: drop-shadow(0 0 3px #f3f1f1);
+  }
+}
+
+@keyframes shadowLogo {
+  to {
+    -webkit-filter: drop-shadow(0 0 3px #f3f1f1);
+            filter: drop-shadow(0 0 3px #f3f1f1);
+  }
+}
+
+@media all and (max-width: 960px) {
+  .splashScreen .myName {
+    width: 35vw;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .splashScreen .myName {
+    width: 40vw;
+  }
+}
+/*# sourceMappingURL=splashScreen.css.map */

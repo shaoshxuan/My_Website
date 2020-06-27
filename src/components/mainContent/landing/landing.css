@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #0b0c10;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #c5c6c7;
+}
+
+.sectionPad {
+  padding: 5rem;
+}
+
+.sectionHeader {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #192129;
+}
+
+.subHeader {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #45a29e;
+  line-height: 1.2;
+  padding-bottom: 0.75rem;
+}
+
+.constantBreak {
+  padding: 0.8rem;
+}
+
+.paraBreak {
+  padding: 0.2rem;
+}
+
+@media all and (min-width: 2401px) {
+  :root {
+    font-size: 20px;
+  }
+}
+
+@media all and (max-width: 2400px) {
+  :root {
+    font-size: 18px;
+  }
+}
+
+@media all and (max-width: 1920px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+@media all and (max-width: 1440px) {
+  :root {
+    font-size: 15px;
+  }
+}
+
+@media all and (max-width: 960px) {
+  :root {
+    font-size: 14px;
+  }
+  .sectionPad {
+    padding: 4rem;
+  }
+  .sectionHeader {
+    font-size: 1.5rem;
+  }
+  .subHeader {
+    font-size: 1.1rem;
+  }
+  .constantBreak {
+    padding: 0.6rem;
+  }
+}
+
+@media all and (max-width: 480px) {
+  :root {
+    font-size: 13px;
+  }
+  .sectionPad {
+    padding: 3rem;
+  }
+  .sectionHeader {
+    font-size: 1.3rem;
+  }
+  .subHeader {
+    font-size: 1rem;
+  }
+  .constantBreak {
+    padding: 0.4rem;
+  }
+}
+
+.block {
+  display: none;
+}
+
+.landing {
+  width: 100%;
+  height: 100vh;
+  background-color: #192129;
+}
+
+.landing #tsparticles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+}
+
+.landing .landingContent {
+  width: inherit;
+  height: inherit;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.landing .landingContent .iBuild {
+  position: relative;
+  z-index: 80;
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #45a29e;
+}
+
+.landing .landingContent .iBuildWhat {
+  position: relative;
+  z-index: 80;
+  font-size: 2.2rem;
+  font-weight: 300;
+  color: #66fcf1;
+  line-height: 1.2;
+}
+
+.landing .landingContent .landingWhoAmI {
+  position: relative;
+  z-index: 80;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.landing .landingContent .landingWhoAmI .landingName {
+  color: #e41376;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.landing .landingContent .profileLinks a {
+  position: relative;
+  z-index: 80;
+  padding: 0 0.8rem;
+  display: inline-block;
+  font-size: 3rem;
+  color: #ffffff;
+  opacity: 0.4;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.landing .landingContent .profileLinks a:hover {
+  color: #66fcf1;
+  opacity: 1;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-filter: drop-shadow(0 0 5px #66fcf1);
+          filter: drop-shadow(0 0 5px #66fcf1);
+}
+
+.landing .landingContent .landingQuote {
+  position: relative;
+  z-index: 80;
+  font-size: 0.8rem;
+  font-weight: 200;
+  font-style: italic;
+  color: #ffffff;
+}
+
+.landing .landingContent .startView {
+  position: absolute;
+  bottom: 0;
+  font-size: 2.5rem;
+}
+
+.landing .landingContent .startView a {
+  display: inline-block;
+  color: #66fcf1;
+  -webkit-animation: bounceArrow 2s infinite;
+          animation: bounceArrow 2s infinite;
+}
+
+.landingBreak {
+  padding: 0.8rem 0;
+}
+
+@media all and (max-width: 960px) {
+  .landing .landingContent .iBuild {
+    font-size: 1.3rem;
+  }
+  .landing .landingContent .iBuildWhat {
+    font-size: 1.9rem;
+  }
+  .landing .landingContent .landingWhoAmI .landingName {
+    color: #e41376;
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+  .landing .landingContent .startView {
+    font-size: 2rem;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .landing .landingContent .iBuild {
+    font-size: 1.2rem;
+  }
+  .landing .landingContent .iBuildWhat {
+    font-size: 1.6rem;
+  }
+  .landing .landingContent .landingWhoAmI {
+    font-size: 0.8rem;
+  }
+  .landing .landingContent .landingWhoAmI .landingName {
+    color: #e41376;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .landing .landingContent .profileLinks a {
+    font-size: 2rem;
+  }
+  .landing .landingContent .landingQuote {
+    font-size: 0.6rem;
+  }
+  .landing .landingContent .startView {
+    font-size: 1.5rem;
+  }
+}
+
+@-webkit-keyframes bounceArrow {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-filter: drop-shadow(0 0 0px #66fcf1);
+            filter: drop-shadow(0 0 0px #66fcf1);
+  }
+  40% {
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
+    -webkit-filter: drop-shadow(0 0 5px #66fcf1);
+            filter: drop-shadow(0 0 5px #66fcf1);
+  }
+  60% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-filter: drop-shadow(0 0 0px #66fcf1);
+            filter: drop-shadow(0 0 0px #66fcf1);
+  }
+  80% {
+    -webkit-transform: translateY(-0.5rem);
+            transform: translateY(-0.5rem);
+    -webkit-filter: drop-shadow(0 0 5px #66fcf1);
+            filter: drop-shadow(0 0 5px #66fcf1);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes bounceArrow {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-filter: drop-shadow(0 0 0px #66fcf1);
+            filter: drop-shadow(0 0 0px #66fcf1);
+  }
+  40% {
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
+    -webkit-filter: drop-shadow(0 0 5px #66fcf1);
+            filter: drop-shadow(0 0 5px #66fcf1);
+  }
+  60% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-filter: drop-shadow(0 0 0px #66fcf1);
+            filter: drop-shadow(0 0 0px #66fcf1);
+  }
+  80% {
+    -webkit-transform: translateY(-0.5rem);
+            transform: translateY(-0.5rem);
+    -webkit-filter: drop-shadow(0 0 5px #66fcf1);
+            filter: drop-shadow(0 0 5px #66fcf1);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+/*# sourceMappingURL=landing.css.map */
